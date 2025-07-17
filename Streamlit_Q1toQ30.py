@@ -7,6 +7,19 @@ Created on Wed Jul  9 14:44:50 2025
 """
 
 import streamlit as st
+# Add CSS to force text wrapping (but keep default layout)
+st.markdown(
+    """
+    <style>
+    .block-container {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 from QuestionsSolutions_Q1toQ30 import (
     question_1, question_2, question_3, question_4, question_5,
     question_6, question_7, question_8, question_9, question_10,
