@@ -425,10 +425,11 @@ def question_11_solution():
     \text{Given } k = 2.6, \text{ so } P = 2.6T. \\
     \boxed{P = 2.6T}
     """)
+
 def question_12():
     st.write("The surface area of an object is given by")
     st.latex(r"A = 6\sqrt[3]{V^2}")
-    st.latex(r"\text{Find } V \text{ if } A = 18.")
+    st.markdown("Find $V$ if $A = 18$.")
 
     choice = st.radio(
         "Select your answer:",
@@ -463,11 +464,11 @@ def question_12_solution():
     """)
 
 def question_13():
-    st.write("The compound interest formula is given by")
-    st.latex(r"A = A_0(1 + r)^t")
-   # st.write("If")
-    st.latex(r"\text{If } A = \$60,000, \ A_0 = \$50,000, \ t = 3.")
-    st.latex(r"\text{Find the annual interest rate }\, r.")
+    st.write("The compound interest formula is given by:")
+    st.latex(r"A = A_0 (1 + r)^t")
+    st.write("If:")
+    st.latex(r"A = \$60,000,\ A_0 = \$50,000,\ t = 3")
+    st.write("Find the annual interest rate $r$.")
 
     choice = st.radio(
         "Select your answer:",
@@ -739,8 +740,8 @@ def question_20_solution():
     st.latex(r"""
     \textbf{Worked-Out Solution} \\
     \text{The fractions in the diagram are NOT equivalent.} \\
-    \text{The first represents 4/6 = 1/3 but the second represents\\ 
-    \text4/12 = 1/3.}\\
+    \text{The first represents 4/6 = 1/3 but the second represents}\\ 
+    \text{4/12 = 1/3.}\\
     \boxed{\text{Inequivalent Fractions}}
     """)
 
@@ -918,13 +919,10 @@ def question_25():
 
 
 def question_25_solution():
-    #st.write("✅ Correct answer: (b)")
-    st.latex(r"""
-    \textbf{Worked-Out Solution} \\
-    \text{A straight line has a constant slope, so the triangles are similar}\\ 
-    \text{because the sides are proportional.} \\
-    \boxed{\text{Constant Slope}}
-    """)
+    st.markdown("**Worked-Out Solution**  \n"  # <- note the double space before \n
+                "A straight line has a constant slope, so the triangles are similar  \n"
+                "because the sides are proportional.  \n")
+    st.latex(r"\boxed{\text{Constant Slope}}")
     
 
 def question_26():
