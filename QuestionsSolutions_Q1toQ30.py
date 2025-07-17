@@ -428,8 +428,7 @@ def question_11_solution():
 def question_12():
     st.write("The surface area of an object is given by")
     st.latex(r"A = 6\sqrt[3]{V^2}")
-    st.write("Find")
-    st.latex(r"V \text{ if } A = 18.")
+    st.latex(r"\text{Find } V \text{ if } A = 18.")
 
     choice = st.radio(
         "Select your answer:",
@@ -740,7 +739,7 @@ def question_20_solution():
     st.latex(r"""
     \textbf{Worked-Out Solution} \\
     \text{The fractions in the diagram are NOT equivalent.} \\
-    \text{The first represents 4/6 = 1/3 but the second represents 
+    \text{The first represents 4/6 = 1/3 but the second represents\\ 
     \text4/12 = 1/3.}\\
     \boxed{\text{Inequivalent Fractions}}
     """)
@@ -922,7 +921,8 @@ def question_25_solution():
     #st.write("✅ Correct answer: (b)")
     st.latex(r"""
     \textbf{Worked-Out Solution} \\
-    \text{A straight line has a constant slope, so the triangles are similar because the sides are proportional.} \\
+    \text{A straight line has a constant slope, so the triangles are similar}\\ 
+    \text{because the sides are proportional.} \\
     \boxed{\text{Constant Slope}}
     """)
     
