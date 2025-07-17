@@ -468,8 +468,8 @@ def question_13():
     st.latex(r"A = A_0(1 + r)^t")
     st.write("If")
     st.latex(r"A = \$60,000, \ A_0 = \$50,000, \ t = 3.")
-    st.write("Find the annual interest rate ")
-    st.latex(r"r")
+    #st.write("Find the annual interest rate r ")
+    st.latex(r"\text{Find the annual interest rate } r.")
 
     choice = st.radio(
         "Select your answer:",
@@ -741,7 +741,7 @@ def question_20_solution():
     st.latex(r"""
     \textbf{Worked-Out Solution} \\
     \text{The fractions in the diagram are NOT equivalent.} \\
-    \text{The first represents 4/6 = 1/3 but the second represents 4/12 = 1/3.}
+    \text{The first represents 4/6 = 1/3 but the second represents 4/12 = 1/3.}\\
     \boxed{\text{Inequivalent Fractions}}
     """)
 
@@ -852,7 +852,8 @@ def question_24():
     st.write("Container B holds twice as much liquid as container A. "
              "If container A presently has 24 ounces and this is 30% of its capacity, "
              "and container B presently holds 48 ounces, "
-             "what percentage of container B will be filled after pouring the contents of container A into it?")
+             "what percentage of container B will be filled after pouring the contents" 
+             "of container A into it?")
 
     choice = st.radio(
         "Select your answer:",
@@ -1111,4 +1112,37 @@ def question_30_solution():
     \text{This is a line passing through the origin with slope }1. \\
     \boxed{y = x}
     """)
+def run_quiz():
+    # Call all 30 questions in order
+    question_1()
+    question_2()
+    question_3()
+    question_4()
+    question_5()
+    question_6()
+    question_7()
+    question_8()
+    question_9()
+    question_10()
+    question_11()
+    question_12()
+    question_13()
+    question_14()
+    question_15()
+    question_16()
+    question_17()
+    question_18()
+    question_19()
+    question_20()
+    question_21()
+    question_22()
+    question_23()
+    question_24()
+    question_25()
+    question_26()
+    question_27()
+    question_28()
+    question_29()
+    question_30()
+
 
