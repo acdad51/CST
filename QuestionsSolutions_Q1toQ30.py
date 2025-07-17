@@ -466,10 +466,9 @@ def question_12_solution():
 def question_13():
     st.write("The compound interest formula is given by")
     st.latex(r"A = A_0(1 + r)^t")
-    st.write("If")
-    st.latex(r"A = \$60,000, \ A_0 = \$50,000, \ t = 3.")
-    #st.write("Find the annual interest rate r ")
-    st.latex(r"\text{Find the annual interest rate } r.")
+   # st.write("If")
+    st.latex(r"\text{If } A = \$60,000, \ A_0 = \$50,000, \ t = 3.")
+    st.latex(r"\text{Find the annual interest rate }\, r.")
 
     choice = st.radio(
         "Select your answer:",
@@ -741,7 +740,8 @@ def question_20_solution():
     st.latex(r"""
     \textbf{Worked-Out Solution} \\
     \text{The fractions in the diagram are NOT equivalent.} \\
-    \text{The first represents 4/6 = 1/3 but the second represents 4/12 = 1/3.}\\
+    \text{The first represents 4/6 = 1/3 but the second represents 
+    \text4/12 = 1/3.}\\
     \boxed{\text{Inequivalent Fractions}}
     """)
 
