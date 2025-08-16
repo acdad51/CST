@@ -95,7 +95,7 @@ def intro_page():
     st.markdown("<h3 style='text-align: center;'>Dr. Rothman</h3>", unsafe_allow_html=True)
     st.write("These practice questions for the mathematics portion of the New York State Content Specialty Exam (CST)")
     st.write("reflect feedback from LIU Post students who have successfully passed this exam.")
-    st.write("It is our hope that you will share your exam experience with us an aid to future LIU Post test takers.")
+    st.write("It is our hope that you will share your exam experience with us as an aid to future LIU Post test takers.")
     st.write("Please enter your information before starting the quiz.")
     st.write("This information will only be used to contact you about your CST Exam experience.")
    
