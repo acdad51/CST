@@ -104,7 +104,7 @@ def question_4():
         key="q4_choice"
     )
 
-    if choice == "3 (in thousands place)":
+    if choice == "3 (in tens place)":
         st.success("✅ Correct!")
     elif choice is not None:
         st.error("❌ Incorrect. Try again.")
@@ -158,7 +158,7 @@ def question_6():
         key="q6_choice"
     )
 
-    if choice == "$20":
+    if choice == "$10":
         st.success("✅ Correct!")
     elif choice is not None:
         st.error("❌ Incorrect. Try again.")
@@ -241,7 +241,7 @@ def question_9():
 def question_10():
     # Left-justified question
     st.markdown(
-        "10. Given the three points $A(-3,7)$, $D(3,-1)$, and $C(0,-5)$, "
+        "10. Given parallelogram ABCD with vertices $A(0,0)$, $B(6,8)$, and $C(10,8)$, "
         "find the perimeter of the parallelogram with these points as vertices."
     )
 
@@ -249,16 +249,16 @@ def question_10():
     choice = st.radio(
         "Select your answer:",
         [
-            "63.86",         # ✅ Correct answer
-            "31.93",         # ❌ Forgot to double the sides
-            "127.72",        # ❌ Double-counted the full perimeter
-            "50.00"          # ❌ Rough estimate or calculation error
+            "14",         # ✅ Correct answer
+            "24",         # ❌ Forgot to double the sides
+            "28",        # ✅ Double-counted the full perimeter
+            "56"          # ❌ Rough estimate or calculation error
         ],
         index=None,
         key="q10_choice"
     )
 
-    if choice == "63.86":
+    if choice == "28":
         st.success("✅ Correct!")
     elif choice is not None:
         st.error("❌ Incorrect. Try again.")
@@ -301,8 +301,8 @@ def question_4_solution():
     st.write("✅ Correct answer: (a)")
     st.latex(r"""
     \textbf{Worked-Out Solution} \\
-    \text{The 3 to the right of the decimal is in the } \tfrac{1}{1000} \text{th place.} \\
-    \text{The 3 in the thousands place is 1000 times larger.}
+    \text{The 3 to the right of the decimal is in the } \tfrac{1}{100} \text{th place.} \\
+    \text{The 3 in the tens place is 1000 times larger.}
     """)
 
 
@@ -367,23 +367,18 @@ def question_10_solution():
     st.write("✅ Correct answer: (b)")
     st.latex(r"""
     \textbf{Worked-Out Solution} \\
-    \text{We are given three points: } A(-3, 7),\ D(3, -1),\ C(0, -5). \\
-    \textbf{Step 1: Find the fourth vertex.} \\
-    \overrightarrow{AC} = (0 - (-3),\ -5 - 7) = (3, -12). \\
-    B = D + \overrightarrow{AC} = (3, -1) + (3, -12) = (6, -13). \\
-    \\
-    \textbf{Step 2: Compute side lengths.} \\
-    AB = \sqrt{(6 - (-3))^2 + (-13 - 7)^2} \\
-    = \sqrt{9^2 + (-20)^2} = \sqrt{81 + 400} = \sqrt{481}. \\
-    AD = \sqrt{(3 - (-3))^2 + (-1 - 7)^2} \\
-    = \sqrt{6^2 + (-8)^2} = \sqrt{36 + 64} = \sqrt{100} = 10. \\
+    \text{We are given three vertices: } A(0, 0),\ B(6, 8),\ C(10, 8). \\
+    
+    \textbf{Step 2: Compute adjacent side lengths AB and BC.} \\
+    AB = \sqrt{(6 - 0)^2 + (8 - 0)^2} \\
+    = \sqrt{36 + 64} = \sqrt{100} = 10. \\
+    BC = \sqrt{(6 - 10)^2 + (8 - 8)^2} \\
+    = \sqrt{16 + 0} = 4. \\
     \\
     \textbf{Step 3: Find the perimeter.} \\
-    P = 2 \times (AB + AD) \\
-    = 2 \times \left(\sqrt{481} + 10\right) \\
-    \approx 2 \times (21.93 + 10) = 2 \times 31.93 = 63.86. \\
-    \\
-    \boxed{P = 63.86}
+    P = 2 \times (AB + BC) = 2\times(10+4)=28) \\
+    
+    \boxed{P = 28}
     """)
 
 
@@ -544,7 +539,7 @@ def question_15():
         "Select your answer:",
         [
             "70",
-            "71",
+            "85",
             "72",
             "73"
         ],
@@ -553,7 +548,7 @@ def question_15():
     )
 
     if choice:
-        if choice == "71":
+        if choice == "85":
             st.success("✅ Correct!")
         else:
             st.error("❌ Incorrect. Try again.")
@@ -624,7 +619,7 @@ def question_17():
     )
 
     if choice:
-        if choice == "√2 ⋅ √4":
+        if choice == "√2 ⋅ √8":
             st.success("✅ Correct!")
         else:
             st.error("❌ Incorrect. Try again.")
@@ -740,7 +735,7 @@ def question_20_solution():
     st.latex(r"""
     \textbf{Worked-Out Solution} \\
     \text{The fractions in the diagram are NOT equivalent.} \\
-    \text{The first represents 4/6 = 1/3 but the second represents}\\ 
+    \text{The first represents 4/6 = 2/3 but the second represents}\\ 
     \text{4/12 = 1/3.}\\
     \boxed{\text{Inequivalent Fractions}}
     """)
@@ -902,7 +897,7 @@ def question_25():
         [
             "Because they are right triangles",
             "Because a straight line has constant slope",
-            "Because they have proportional sides",
+            "Because corresponding sides are equal",
             "Because their angles add up to 180°"
         ],
         index=None,
@@ -935,7 +930,7 @@ def question_26():
             r"$f(x) = -f(x)$",
             r"$f(x) = f(-x)$",      # ✅ Correct
             r"$f(-x) = -f(x)$",
-            r"$f(x) = x^2$"
+            r"$f(x) = x$"
         ],
         index=None,
         key="q26_choice"
@@ -957,7 +952,7 @@ def question_26():
             r"$f(x) = -f(x)$",
             r"$f(x) = f(-x)$",      # ✅ Correct
             r"$f(-x) = -f(x)$",
-            r"$f(x) = x^2$"
+            r"$f(x) = x$"
         ],
         index=None,
         key="q26_choice"
@@ -987,7 +982,7 @@ def question_27():
         "Select your answer:",
         [
             "10 centimeters = 1 meter",
-            "100,000 centimeters = 1 kilometer",
+            "10,000 centimeters = 1 kilometer",
             "1,000 centimeters = 1 meter",
             "100 centimeters = 1 meter"
         ],
@@ -1047,7 +1042,7 @@ def question_28_solution():
 
 def question_29():
     #st.markdown("### Question 29")
-    st.write("Would you use a histogram, pie chart, or scatter plot to look at students and their GPAs?")
+    st.write("Would graph is most appropriate for displaying the distribution of GPA's in a class?")
 
     choice = st.radio(
         "Select your answer:",
